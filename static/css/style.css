@@ -1,0 +1,190 @@
+*{margin:0;padding:0}
+a{text-decoration:none;}
+img{max-width:100%;}
+body{
+	background:#fff;
+}
+hr{
+    border-bottom: 1px solid #CCC;
+    border-top: none;
+    width: 600px;
+    display: inline-block;
+
+}
+.clear{clear:both;}/* clear float */
+.wrap{
+    width:90%;
+    margin:0 auto;  /*这个div中间对齐*/
+}
+
+/*header*/
+.header{
+	background:#fff;
+	padding: 2% 0;
+}
+.logo {
+	text-align: left;
+}
+.logo h1 a{
+	color: #001489;
+	font-size: 2em;
+	font-family: 'times';
+}
+
+/*nav*/
+.nav{
+	background:#001489;
+}
+.navlist{
+	text-align:left;
+}
+.navlist > ul > li {
+	display: inline-block; /*内联块元素*/
+
+}
+.navlist > ul > li > a {
+	color: #FFF;
+	display: block;
+	padding: 10px 32px;
+}
+.navlist > ul > li a:hover {
+    color: #000;
+    background:#FFF;
+}
+/*--index_content--*/
+.index-box{
+	text-align:center;
+	margin-bottom: 2%;
+}
+.main img:hover{
+	transform: scale(1.02, 1.02);
+	opacity: 0.9;
+}
+.index-box h2{
+    text-align: center;
+    color: #001489;
+    font-size: 3em;
+    font-family: 'times';
+    margin-bottom: 20px;
+}
+
+/*newslist-box*/
+.newslist-box{
+	color: #001489;
+	font-family: 'times';
+}
+/*video*/
+.video-box{
+	color: #001489;
+	font-family: 'times';
+}
+/*news*/
+.news_title{
+	color: #001489;
+	font-size: 2em;
+	margin-top: 40px;
+}
+
+
+.news_content{
+	font-size: 1.5em;
+	align-content: center;
+	margin-top: 40px;
+
+}
+.news_img{
+    margin-top: 40px;
+}
+
+/*player*/
+
+.video-player{
+	margin-top: 40px;
+	margin-bottom: 40px ;
+	text-align:center
+}
+
+
+/*--footer--*/
+.footer {
+    background: #001489;
+    text-align:center;
+    padding:3% 0;
+}
+.footer-text h2{
+    color:#fff;
+    font-size:3em;
+    text-transform:uppercase;  /*定义字母全部大写*/
+    margin-bottom:2%;
+}
+.footer-text p{
+    font-size:0.8125em;
+    line-height:1.5em;  /*设置数字，此数字会与当前的字体尺寸相乘来设置行间距。*/
+    color:#989898;
+}
+.follow_icon {
+    padding: 2% 0;
+}
+ul.follow_icon li {
+    display: inline-block; /*  内联块元素 ====>>> 使用 display :inline-block*/
+    margin-left:15px;
+}
+.follow_icon li a img {
+    vertical-align: middle;  /*	把此元素放置在父元素的中部。*/
+}
+.copy p{
+    color:#fff;
+    font-size:0.8125em;
+}
+.copy p a{
+    color:#E4E24F;
+}
+
+
+/*  GRID OF FOUR   ============================================================================= */
+
+.col_1_of_4{
+	display: block;
+	float: left;
+	margin: 1% 1% 1% 1%;
+}
+.col_1_of_4:first-child { margin-left: 0; }
+.span_1_of_4 {
+	width: 22.8%;
+}
+
+
+/* Media Quries */
+@media only screen and (max-width: 1024px) {
+	.wrap{
+		width:95%;
+	}
+}
+/*  GO FULL WIDTH AT LESS THAN 640 PIXELS */
+@media only screen and (max-width: 640px) and (min-width: 480px) {
+	.wrap{
+		width:95%;
+	}
+	.col_1_of_4{
+		margin: 1% 1% 1% 1%;
+	}
+	.span_1_of_4 {
+		width:95%;
+		padding:3%;
+	}
+}
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.wrap{
+		width:95%;
+	}
+	.col_1_of_4{
+		margin: 1% 1% 1% 1%;
+	}
+	.span_1_of_4 {
+		width:95%;
+		padding:3%;
+	}
+}
+
+
